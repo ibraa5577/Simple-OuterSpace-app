@@ -1,0 +1,214 @@
+/* App.css */
+/* Import Orbitron and Rajdhani from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap");
+
+body {
+  background: linear-gradient(
+    135deg,
+    #1a2a6c,
+    #b21f1f,
+    #fdbb2d
+  ); /* Gradient background resembling a galaxy */
+  color: #eaeaea; /* Light grey text for readability */
+  font-family: "Rajdhani", "Orbitron", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Semi-transparent background to distinguish content */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px); /* Optional: creates a glassmorphism effect */
+}
+
+.app-title {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #ffd700; /* Golden color for the title */
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 223, 0, 0.6); /* Glow effect */
+}
+
+.app-date {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #ff6f61; /* Soft coral color */
+}
+
+.app-explanation {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  color: #d1d5db;
+  text-align: justify;
+  line-height: 1.8;
+  padding: 15px;
+  border-radius: 8px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.1)
+  );
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.app-image {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+.app-video {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+.app-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.loading,
+.error {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.loading {
+  color: #f9d342; /* Yellow for loading */
+}
+
+.error {
+  color: #ff4c4c; /* Red for error messages */
+}
+/* TextExpander.css */
+
+.text-expander-button {
+  background-color: #c59e00; /* Dark grey background */
+  color: #eaeaea; /* Light text color */
+  border: 1px solid #ffffff; /* Light border */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.7em;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Subtle glow effect */
+}
+
+.text-expander-button:hover {
+  background-color: #d6ab00; /* Slightly lighter on hover */
+  color: #f1f1f1;
+  border-color: #f1f1f1; /* Lighter border on hover */
+}
+
+.text-expander-button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Focus glow effect */
+}
+
+.text-expander-button:active {
+  background-color: #282828; /* Darker on click */
+  color: #e0e0e0;
+  border-color: #e0e0e0;
+}
+/* PeopleInSpace.css */
+
+.people-in-space {
+  background: rgba(0, 0, 0, 0.8); /* Dark background to keep focus on content */
+  color: #f9d342; /* Yellow text for readability */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Dark shadow for depth */
+  backdrop-filter: blur(8px); /* Blur effect for a cosmic feel */
+}
+
+.people-in-space h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #d6ab00; /* Gold color for headings */
+  text-shadow: 0 0 10px rgba(214, 171, 0, 0.6); /* Subtle gold glow */
+}
+
+h1.clickable-header {
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #d6ab00; /* Red color for clickable header */
+  text-shadow: 0 0 10px rgba(214, 171, 0, 0.6); /* Subtle gold glow */
+}
+
+.people-in-space ul {
+  list-style: none;
+  padding: 0;
+}
+
+.people-in-space li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.1); /* Light background for list items */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Dark shadow for separation */
+  color: #f9d342; /* Yellow text for list items */
+}
+
+.people-in-space .people-count {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: #d6ab00; /* Gold color for headings */
+  text-shadow: 0 0 10px rgba(214, 171, 0, 0.6); /* Subtle gold glow */
+}
+
+.people-in-space .loading,
+.people-in-space .error {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.people-in-space .loading {
+  color: #d6ab00; /* Gold color for loading state */
+}
+
+.people-in-space .error {
+  color: #ff4c4c; /* Red color for error messages */
+}
+
+.people-in-space .hide-button {
+  background-color: #d6ab00; /*Red background for hide button */
+  color: #000000; /* White text color */
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 0px;
+  margin-right: 0px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
