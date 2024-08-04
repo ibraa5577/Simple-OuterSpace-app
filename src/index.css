@@ -31,7 +31,7 @@ body {
     0.7
   ); /* Semi-transparent background to distinguish content */
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(14, 9, 9, 0.5);
   backdrop-filter: blur(10px); /* Optional: creates a glassmorphism effect */
 }
 
@@ -39,8 +39,7 @@ body {
   font-size: 2.5em;
   margin-bottom: 15px;
   color: #ffd700; /* Golden color for the title */
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8),
-    0 0 20px rgba(255, 223, 0, 0.6); /* Glow effect */
+  text-shadow: 0 0 15px rgba(179, 67, 67, 0.8);
 }
 
 .app-date {
@@ -62,14 +61,14 @@ body {
     rgba(255, 255, 255, 0.2),
     rgba(255, 255, 255, 0.1)
   );
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(14, 9, 9, 0.5);
 }
 
 .app-image {
   width: 100%;
   max-height: 500px;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px rgba(14, 9, 9, 0.5);
   margin-bottom: 20px;
 }
 
@@ -80,7 +79,7 @@ body {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px rgba(14, 9, 9, 0.5);
   margin-bottom: 20px;
 }
 
@@ -109,21 +108,20 @@ body {
 /* TextExpander.css */
 
 .text-expander-button {
-  background-color: #c59e00; /* Dark grey background */
-  color: #eaeaea; /* Light text color */
-  border: 1px solid #ffffff; /* Light border */
-  padding: 10px 20px;
+  background-color: transparent;
+  color: #ecc900;
+  border: 1px solid #ffffff;
+  padding: 3px 5px;
   border-radius: 5px;
+  border-width: 0.5px;
   cursor: pointer;
-  font-size: 0.7em;
+  font-size: 0.8em;
+  font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Subtle glow effect */
 }
 
 .text-expander-button:hover {
-  background-color: #d6ab00; /* Slightly lighter on hover */
-  color: #f1f1f1;
-  border-color: #f1f1f1; /* Lighter border on hover */
+  color: #ffcc00;
 }
 
 .text-expander-button:focus {
@@ -153,14 +151,14 @@ body {
   font-size: 2.5em;
   margin-bottom: 15px;
   color: #d6ab00; /* Gold color for headings */
-  text-shadow: 0 0 10px rgba(214, 171, 0, 0.6); /* Subtle gold glow */
+  text-shadow: 0 0 15px rgba(179, 67, 67, 0.8);
 }
 
 h1.clickable-header {
   font-size: 1.5em;
   cursor: pointer;
   color: #d6ab00; /* Red color for clickable header */
-  text-shadow: 0 0 10px rgba(214, 171, 0, 0.6); /* Subtle gold glow */
+  text-shadow: 0 0 15px rgba(179, 67, 67, 0.8);
 }
 
 .people-in-space ul {
@@ -182,7 +180,7 @@ h1.clickable-header {
   font-size: 1.3em;
   margin-bottom: 15px;
   color: #d6ab00; /* Gold color for headings */
-  text-shadow: 0 0 10px rgba(214, 171, 0, 0.6); /* Subtle gold glow */
+  text-shadow: 0 0 15px rgba(179, 67, 67, 0.8);
 }
 
 .people-in-space .loading,

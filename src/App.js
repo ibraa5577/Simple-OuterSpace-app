@@ -85,7 +85,6 @@ function PeopleInSpace() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const [showPeople, setShowPeople] = useState(false);
-  console.log(data);
 
   useEffect(() => {
     async function fetchData() {
@@ -93,13 +92,14 @@ function PeopleInSpace() {
       try {
         setLoading(true);
         setError("");
-        const res = await fetch("http://api.open-notify.org/astros.json");
+        const res = await fetch("https://api.open-notify.org/astros.json");
         if (!res.ok) throw new Error("Fetching people in space went wrong");
         const data = await res.json();
         setData(data);
         setError("");
       } catch (e) {
         setError(e.message);
+        console.log(e.message);
       } finally {
         setLoading(false);
       }
