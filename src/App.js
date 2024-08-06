@@ -92,7 +92,7 @@ function PeopleInSpace() {
       try {
         setLoading(true);
         setError("");
-        const res = await fetch("https://api.open-notify.org/astros.json");
+        const res = await fetch("http://api.open-notify.org/astros.json");
         if (!res.ok) throw new Error("Fetching people in space went wrong");
         const data = await res.json();
         setData(data);
